@@ -15,6 +15,7 @@
       "@constants/*": ["src/constants/*"],
       "@fixtures/*": ["src/fixtures/*"],
       "@tools/*": ["src/tools/*"],
+      "@interfaces/*": ["src/interfaces/*"],
     }
   },
   "include": ["src/**/*"],

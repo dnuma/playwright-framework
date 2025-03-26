@@ -12,12 +12,11 @@ export class ApiCalls {
     return await response.json();
   }
 
-  async starWarsQuote(
-    request: APIRequestContext
-  ) {
-    const response = await request.get("http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote");
-    return await response.json();
-  }
+  async randomQuote(request: APIRequestContext) {
+    const response = await request.get("https://api.quotable.io/random");
+    const data = await response.json();    
+    return data;
+}
 
   async swapiPeople(
     request: APIRequestContext,

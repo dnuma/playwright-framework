@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import { BasePage } from "@pages/base.page";
+import { User } from "../interfaces/user.interface";
 
 export class LoginPage extends BasePage {
   readonly page: Page;
@@ -15,9 +16,9 @@ export class LoginPage extends BasePage {
     this.loginButton = page.locator('[data-test="login-button"]');
   }
 
-  async login(username: string, password: string) {
-    await this.username.fill(username);
-    await this.password.fill(password);
+  async login(user: User) {
+    await this.username.fill(user.username);
+    await this.password.fill(user.password);
     await this.loginButton.click();
   };
 
