@@ -8,6 +8,7 @@
     "@types/node": "^22.13.13"
   },
   "scripts": {
-    "test": "npx playwright test --headed --project=chromium --workers=1 -g"
+    "test": "npx playwright test --headed --project=chromium --workers=1 -g",
+    "test:auth": "npx playwright test --project=auth --workers=1"
   }
 }
