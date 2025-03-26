@@ -2,12 +2,8 @@ import { test, expect } from '@fixtures/testExtended.fixture';
 import { LoginPage } from '@pages/login.page';
 import { User } from '@interfaces/user.interface';
 
-test.beforeEach(async ({ page, printRandomQuote }) => {
+test.beforeEach(async ({ page, helloWorld }) => {
   await page.goto('/');
-  await Promise.all([
-    page.waitForLoadState('domcontentloaded'), // Wait for DOM to be ready
-    page.waitForLoadState('networkidle')      // Wait for all network activity to stop
-  ]);
 });
 
 test.afterEach(async ({ page }) => {
