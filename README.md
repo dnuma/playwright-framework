@@ -66,7 +66,7 @@ project-root/
 │   ├── pages/           # Page Object Model classes
 |   ├── tests/           # Test specifications
 │   └── utils/           # Utility functions
-
+|
 │── playwright.config.ts # Configuration file
 ├── .env                 # Environment variables
 └── package.json         # Project metadata and scripts
