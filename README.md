@@ -11,7 +11,7 @@ This is a comprehensive Playwright automation framework built from the ground up
 - Environment variable configuration
 - Relative path handling
 - Comprehensive demo tests
-- [https://allurereport.org/](Allure Reporting)
+- [Allure Reporting](https://allurereport.org/)
 
 ## 📋 Prerequisites
 - Node.js (v16 or later)
