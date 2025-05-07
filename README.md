@@ -11,6 +11,7 @@ This is a comprehensive Playwright automation framework built from the ground up
 - Environment variable configuration
 - Relative path handling
 - Comprehensive demo tests
+- [https://allurereport.org/](Allure Reporting)
 
 ## 📋 Prerequisites
 - Node.js (v16 or later)
@@ -29,13 +30,13 @@ cd playwright-framework
 npm install
 ```
 
-### 4. Install playwright browsers
+### 4. Install Playwright's browsers
 ```bash
 npx playright install
 ```
 
 ### 5. Configure Environment
-Create a `.env` file in the project root with necessary environment variables:
+Create a `.env` file in the project root with the necessary environment variables:
 ```
 PLAYWRIGHT_USERNAME=standard_user
 PLAYWRIGHT_PASSWORD=secret_sauce
