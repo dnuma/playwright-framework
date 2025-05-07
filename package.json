@@ -5,11 +5,13 @@
 
   "dependencies": {
     "dotenv": "^16.4.7",
-    "playwright": "^1.51.1"
+    "playwright": "^1.51.1",
+    "allure-playwright": "^3.2.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.13.13"
+    "@types/node": "^22.13.13",
+    "allure-commandline": "^2.34.0"
   },
   "scripts": {
     "test": "npx playwright test --headed --project=chromium --workers=1 -g",

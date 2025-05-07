@@ -26,8 +26,8 @@ test.describe('Test Suite', {
   test('login', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const user: User = {
-      username: process.env.PLAYWRIGHT_USERNAME || 'standard_user',
-      password: process.env.PLAYWRIGHT_PASSWORD || 'secret_sauce'
+      username: process.env.PLAYWRIGHT_USERNAME ?? 'standard_user',
+      password: process.env.PLAYWRIGHT_PASSWORD ?? 'secret_sauce'
     };
 
     await loginPage.login(user);
