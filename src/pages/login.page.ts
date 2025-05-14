@@ -11,9 +11,9 @@ export class LoginPage extends BasePage {
   constructor (page: Page) { 
     super(page);
     this.page = page;
-    this.username = page.locator('[data-test="username"]');
-    this.password = page.locator('[data-test="password"]');
-    this.loginButton = page.locator('[data-test="login-button"]');
+    this.username = this.page.locator('[data-test="username"]');
+    this.password = this.page.locator('[data-test="password"]');
+    this.loginButton = this.page.locator('[data-test="login-button"]');
   }
 
   async login(user: User) {
